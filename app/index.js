@@ -1,1 +1,15 @@
-export const add2Nums = (num1, num2) => num1 + num2;
+export const calcAvg = () => {
+  throw new Error("Not implemented");
+};
+
+export const calcCartTotal = () => {
+  throw new Error("Not implemented");
+};
+
+export const calcRectArea = () => {
+  throw new Error("Not implemented");
+};
+
+export const convertFtToIn = () => {
+  throw new Error("Not implemented");
+};
