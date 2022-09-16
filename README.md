@@ -1,28 +1,13 @@
-# Node Starter
+# HW 4
 
-**Update:** A `pnpm-lock.yaml` file was added to the root of the project. If possible use `pnpm` over `npm`. You might like it better. See [the docs 📝](https://pnpm.io/motivation) if interested. If not, delete this file.
+In [app/index.test.js](app/index.test.js) you will find a series of tests that are failing. Your job is to make them pass. You will need to edit [app/index.js](app/index.js) to make the tests pass.
 
-## TLDR
+**DO NOT** edit the tests in [app/index.test.js](app/index.test.js). Rather, in [app/index.js](app/index.js) you will remove the `throw new Error('Not Implemented')` line and replace it with your own code. You should not make any other changes to the file aside from working inside the function bodies and the parameters.
 
-Use of this starter template assumes that you have a 'complete dev environment' setup - a terminal, Node, VS Code, at least. If not, you may want to [start here.](https://www.notion.so/codefinity/Setting-up-a-Local-Dev-Environment-for-JS-02a4e9f4a30043d3a8e7d109be3448f4)
+Before doing anything else, make sure to run `npm i`. This will install the dependencies for the project.
 
-1. Click that big green button to start using it.
-2. `clone` your new repo from your GitHub to your local computer
-3. `cd` into the `clone`d repo and enter: `npm i`.
-4. `npm start`
+To run the tests, run `npm test`. This will run the tests in [app/index.test.js](app/index.test.js) and report the results.
 
-## Some of What's Included
+It will run in 'watch' mode so that as you make changes to [app/index.js](app/index.js) the tests will re-run.
 
-- [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-- Various VS Code 'settings' and 'extensions.' Look in the bottom right when you open this up in VS Code to install them.
-- Jest for testing: `npm test`. It's using BabelJS so Jest can handle ESModules.
-
-## How To Use
-
-Run `npm i` to get all the things installed.
-
-`npm start` will watch the `app` directory for any changes using `nodemon`
-
-## Other Notes
-
-To use the new experimental `fetch` that's now in Node, just add: `/* global fetch */` to the top of your file. This will appease ESLint.
+For further details, kindly watch [this video](https://www.loom.com/share/0497a4334cea4566ab8d1825a1639143).
