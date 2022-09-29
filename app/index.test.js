@@ -24,20 +24,3 @@ describe("calcCartTotal", () => {
     expect(calcCartTotal(input)).toBe(expected);
   });
 });
-
-describe("calcRectArea", () => {
-  it("calculates the area of a rectangle", () => {
-    const inputL = 10;
-    const inputW = 20;
-    const expected = 200;
-    expect(calcRectArea(inputL, inputW)).toBe(expected);
-  });
-});
-
-describe("convertFtToIn", () => {
-  it("converts feet to inches", () => {
-    const input = 1;
-    const expected = 12;
-    expect(convertFtToIn(input)).toBe(expected);
-  });
-});
