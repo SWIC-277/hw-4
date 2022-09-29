@@ -1,10 +1,5 @@
 import { describe, expect, it } from "vitest";
-import {
-  calcAvg,
-  calcCartTotal,
-  calcRectArea,
-  convertFtToIn,
-} from "./index.js";
+import { calcAvg, calcCartTotal, tallyByCategory } from "./index.js";
 
 describe("calcAvg", () => {
   it("calculates the average from an array of numbers", () => {
@@ -22,5 +17,22 @@ describe("calcCartTotal", () => {
     ];
     const expected = 50;
     expect(calcCartTotal(input)).toBe(expected);
+  });
+});
+
+describe("tallyByCategory", () => {
+  it("tallies up the number of items in each category", () => {
+    const input = [
+      { category: "A", qty: 1 },
+      { category: "B", qty: 2 },
+      { category: "A", qty: 3 },
+    ];
+
+    const expected = {
+      A: 4,
+      B: 2,
+    };
+
+    expect(tallyByCategory(input)).toEqual(expected);
   });
 });
